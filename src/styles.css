@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: aquamarine;
+    /* background: -moz-repeating-linear-gradient(); */
+
+}
+
+.calculator-grid{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 7rem);
+    justify-content: center;
+    text-align: center;
+}
+
+.span-two{
+    grid-column: span 2;
+    background-color: greenyellow;
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+} 
+.span-two:hover,
+.span-two:focus{
+    grid-column: span 2;
+    background-color: pink;
+    color: brown;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+} 
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.78);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0.75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 2rem;
+}
+
+.btn{
+    background-color: greenyellow;
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+}
+
+.btn-orange{
+    background-color: yellow;
+    color: brown;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* .output .previous-operand{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+} */
+
+/* .output .current-operand{
+    color: rgba(255, 255, 255);
+    font-size: 2.5rem;
+} */
+
+/* .output .input{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+} */
+
+/* .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color:;
+} */
+
+.output .display{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2rem;
+}
+.btn:hover,
+.btn:focus 
+{
+    background-color: pink;
+    color: brown;
+}
+/* .btn:focus */
+.btn-orange:hover, 
+.btn-orange:focus{
+    background-color: lightsalmon;
+    color: red;
+}
+
+*{
+    color: green;
+    text-align: center;
+}
